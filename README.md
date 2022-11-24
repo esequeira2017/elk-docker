@@ -8,6 +8,12 @@ Para arrancar los contenedores del stack Elastic, ejecutar el siguiente comando:
 $ docker-compose up -d
 ```
 
+Aplicar fix volume:
+
+```bash
+$ sudo chown -R 1000:1000 elasticsearch/
+```
+
 Para verificar que los tres contenedores del stack se están ejecutando correctamente, ejecutar el siguiente comando:
 
 ```bash
