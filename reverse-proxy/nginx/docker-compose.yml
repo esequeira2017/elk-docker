@@ -1,0 +1,11 @@
+version: '3'
+services:
+    nginx:
+            image: nginx
+            container_name: reverse_proxy
+            volumes:
+                    - ./site-available:/etc/nginx/site-available
+                    - ./site-enabled:/etc/nginx/site-enabled
+            ports:
+                    - "80:80"
+                    - "443:443"
