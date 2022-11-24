@@ -206,6 +206,10 @@ PUT /filebeat-7.17.7-2022.11.07-000001/_settings
 
 Configurar una vista en Kibana:
 
+Primero creamos el index:
+
+ **Management ** -->  **Kibana ** -->  **Index Patterns **
+
 Vamos a las siguientes opciones:
  **Observability** -->  **Logs** --> **Stream** --> **Setting** --> **Indices** --> **filebeat-***
 
