@@ -160,7 +160,7 @@ Para entrar en Kibana abrir un navegador y acceder a [http://localhost:5601](htt
 
 Tags: devops, docker, elastic
 
-**- Instalar Filebeat en una instancia VM:**
+# Instalar Filebeat en una instancia VM GCP
 
 
 ```
