@@ -2,15 +2,15 @@ version: '3.8'
 
 services:
 services:
-    nginx:
-      image: nginx
-      container_name: reverse_proxy
-      volumes:
-        - ./reverse-proxy/nginx/site-available:/etc/nginx/site-available
-        - ./reverse-proxy/nginx/site-enabled:/etc/nginx/site-enabled
-      ports:
-        - "80:80"
-        - "443:443"
+  nginx:
+    image: nginx
+    container_name: reverse_proxy
+    volumes:
+      - ./reverse-proxy/nginx/site-available:/etc/nginx/site-available
+      - ./reverse-proxy/nginx/site-enabled:/etc/nginx/site-enabled
+    ports:
+      - "80:80"
+      - "443:443"
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.15.2
     container_name: elasticsearch
