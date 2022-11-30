@@ -8,6 +8,7 @@ services:
       - ./reverse-proxy/nginx/site-available:/etc/nginx/site-available
       - ./reverse-proxy/nginx/site-enabled:/etc/nginx/site-enabled
       - ./reverse-proxy/nginx/conf.d:/etc/nginx/conf.d
+      - ./reverse-proxy/nginx/.kibana-user:/etc/nginx/.kibana-user
     ports:
       - "80:80"
       - "443:443"
